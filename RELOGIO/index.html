@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <fieldset>
-        <div class="horas">
-            <p id="horas"></p>
+    <fieldset class="borda">
+        <legend>Relógio</legend>
+        <div class="relogio">
+            <div class="display">
+
+                <div class="horas">
+                    <fieldset>
+                        <legend>H</legend>
+                        <p id="horas"></p>
+                    </fieldset>
+                </div>
+
+
+                <div class="minutos">
+                    <fieldset>
+                        <legend>Min</legend>
+                        <p id="minutos"></p>
+                    </fieldset>
+                </div>
+
+
+                <div class="segundos">
+                    <fieldset>
+                        <legend>Seg</legend>
+                        <p id="segundos"></p>
+                    </fieldset>
+                </div>
+
+
+            </div>
+            <div class="controle">
+
+                <button id="controle">PAUSAR</button>
+                <button id="resetar">RESETAR</button>
+                <script src="relogio.js"></script>
+
+            </div>
         </div>
     </fieldset>
-    <fieldset>
-        <div class="minutos">
-            <p id="minutos"></p>
-        </div>
-    </fieldset>
-    <fieldset>
-        <div class="segundos">
-            <p id="segundos"></p>
-        </div>
-    </fieldset>
-    <button><p id="controle">PAUSAR</p></button>
-    <button><p id="resetar">RESETAR</p></button>
-    <script src="relogio.js"></script>
 </body>
+
 </html>

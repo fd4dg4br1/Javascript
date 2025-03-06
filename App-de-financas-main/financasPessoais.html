@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Finanças Pessoais</title>
+</head>
+<body id="body2">
+    <div class="barraLateralEsquerda">
+        <div class="menuBar">
+            <div class="mobile-menu">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+
+            <ul class="nav-list">
+                <li>Renda</li>
+                <li>Orçamento</li>
+                <li>Contas</li>
+                <li>Metas</li>
+                <li onclick="window.location.href='index.html';" class="back">Voltar</li>
+            </ul>
+        </div>
+    </div>
+    <div class="questions">
+        <div class="caixaPerguntas">
+            <h3 id="pergunta1">Renda ativa<br><input type="number" name="rendaAtiva" id=""></h3>
+            <h3 id="pergunta2">Renda passiva<input type="number" name="rendaPassiva" id=""></h3>
+            <h3 id="pergunta3">Renda extra<input type="number" name="rendaExtra" id=""></h3>
+            <h3 id="pergunta4">Renda vitalícia<input type="number" name="rendaVitalicia" id=""></h3>
+            
+        </div>
+        <button class="button">➞</button>
+    </div>
+
+<script src="App.js"></script>
+<script src="mobile-navbar.js"></script>
+<script src="questions.js"></script>
+</html>
